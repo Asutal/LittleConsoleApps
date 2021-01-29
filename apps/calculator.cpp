@@ -5,22 +5,22 @@
 #include <iostream>
 using namespace std;
 
-double jisuan(double a, char oper, double c)
+double jisuan(double a, char oper, double b)
 {
     switch (oper)
     {
     case '+':
-        return a + c;
+        return a + b;
         break;
     case '-':
-        return a - c;
+        return a - b;
         break;
     case '*':
-        return a * c;
+        return a * b;
         break;
     case '/':
-        return ( c ? a / c : 0);
-        //三目运算符 c为0返回0
+        return ( b ? a / b : 0);
+        //三目运算符 b为0返回0
         break;
     default:
         cerr << "Error\n";
